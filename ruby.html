@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surpresa</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.7); /* Fundo preto transparente */
+            margin: 0;
+            padding: 0;
+        }
+
+        #header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            font-size: 24px;
+        }
+
+        #content {
+            padding: 20px;
+        }
+
+        #photo-container {
+            margin-top: 20px;
+        }
+
+        .slider {
+            height: 500px; /* Defina a altura desejada para as imagens quadradas */
+        }
+
+    
+        #message {
+            margin-top: 20px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #fff; /* Cor do texto alterada para branco */
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h1>Proibido descumprir o que tem no pote</h1>
+    </div>
+    <div id="content">
+        <div id="photo-container">
+            <div class="slider">
+                <img src="foto/foto1.jpeg"alt="Amo demais">
+                <!-- Adicione aqui as tags <img> para as outras fotos -->
+                <img src="foto/foto2.jpeg"alt="Amo demais">
+                <img src="foto/foto3.jpeg"alt="TAmo demais">
+                <img src="foto/foto4.jpeg" alt="Amo demais">
+                <img src="foto/foto5.jpeg" alt="Amo demais">
+                <img src="foto/foto6.jpeg" alt="Amo demais">
+                <img src="foto/foto7.jpeg"alt="Amo demais">
+                <img src="foto/foto8.jpeg" alt="Amo demais">
+            </div>
+        </div>
+        <div id="message">
+            <p>Amo você demais meu amor ❤️</p>
+        </div>
+    </div>
+
+    <!-- Adicione as bibliotecas jQuery e Slick Carousel -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- Inicialize o carrossel -->
+    <script>
+        $(document).ready(function(){
+            $('.slider').slick({
+                dots: true,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1, /* Ajustado para mostrar apenas uma imagem de cada vez */
+                slidesToScroll: 1 /* Ajustado para rolar apenas uma imagem de cada vez */
+            });
+        });
+    </script>
+</body>
+</html>
